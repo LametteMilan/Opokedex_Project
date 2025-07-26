@@ -1,0 +1,31 @@
+### récuperer tous les pokémons
+GET http://localhost:3000/pokemon
+
+
+### Récuperer un Pokémon
+GET http://localhost:3000/pokemon/1
+
+
+### récupérer tous les types
+GET http://localhost:3000/type
+
+### récupérer un type
+GET http://localhost:3000/type/1
+
+### récuperer toutes les équipes
+GET http://localhost:3000/team
+
+### récuperer une équipe
+GET http://localhost:3000/team/1
+
+### Récupérer une équipe avec ses Pokémon
+GET http://localhost:3000/team/1?include=pokemon
+
+### Créer une équipe
+POST http://localhost:3000/team
+Content-Type: application/json
+
+{
+  "name": "Équipe",
+  "id": "5"
+}
